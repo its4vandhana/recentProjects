@@ -1,0 +1,11 @@
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: demo-bucket-number-two
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      # Linux AMI
+      ImageId: ami-05b10e08d247fb927
+      InstanceType: t2.micro
